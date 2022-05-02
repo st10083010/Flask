@@ -1,0 +1,23 @@
+{% extends "/lay_out/lay_out.html" %}
+
+{% block title %}star burst stream{% endblock %}
+
+{% block main %}
+<div class="table-head">
+    <thead>
+        <tr>
+            <th>
+                X-Counter Table
+            </th>
+        </tr>
+    </thead>
+</div>
+
+<div class="table-body">
+    <tbody>
+        {% for idx in x_list %}
+        <td>{{ idx }}</td><br>
+        {% endfor %}
+    </tbody>
+</div>
+{% endblock %}
